@@ -20,7 +20,7 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>Modello</title>
+    <title>JS Biglietto treno</title>
 
     <!-- Script -->
     <script src="./js/main.js" defer></script>
@@ -37,18 +37,22 @@
         <div class="container py-5">
             <div>
                 <label for="">Nome e Cognome</label>
-                <input type="text" class="form-control mb-3">
+                <input type="text" class="form-control mb-3" id="username">
                 <label for="">Km da percorrere</label>
-                <input type="text" class="form-control mb-3">
+                <input type="text" class="form-control mb-3" id="distance">
                 <label for="">Fascia d'età</label>
-                <select class="form-select mb-3">
+                <select class="form-select mb-3" id="age">
                     <option value="minorenne">Minorenne</option>
                     <option value="maggiorenne">Maggiorenne</option>
                     <option value="ov65">Over 65</option>
                 </select>
             </div>
-            <button class="btn">Genera</button>
-            <button type="reset">Annulla</button>
+            <button class="btn btn-secondary" id="generate">Genera</button>
+            <button type="reset" class="btn btn-secondary">Annulla</button>
+        </div>
+        <div class="container">
+            <h2>Prezzo del biglietto</h2>
+            <p id="price-ticket"></p>
         </div>
 
     </main>
