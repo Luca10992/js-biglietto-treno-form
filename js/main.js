@@ -5,6 +5,7 @@ const buttonImput = document.getElementById("generate");
 const priceTicket = document.getElementById("price-ticket");
 const usernameTicket = document.getElementById("username-ticket");
 const offertaTicket = document.getElementById("offerta-ticket");
+document.getElementById("display-none").style.display='none';
 
 const priceStandard = 0.21;
 
@@ -36,6 +37,7 @@ buttonImput.addEventListener('click', function() {
     const priceText = "€" + finalPrice.toFixed(2);
     console.log('Prezzo biglietto: ' + priceText);
 
+    document.getElementById("display-none").style.display='block'; 
     usernameTicket.innerText = username;
     priceTicket.innerHTML = priceText;
 })
