@@ -1,0 +1,9 @@
+.container {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    background-image: url(https://www.ticonsiglio.com/wp-content/uploads/2021/09/trenitalia-treno.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
