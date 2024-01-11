@@ -36,28 +36,30 @@
 
         <div class="container my-5 py-3 px-5 text-center rounded ">
             <h2 class="text-center fw-bold">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-            <div class="row flex justify-content-center">
-                <div class="col-3">
-                    <label for="" class="pb-3 fs-5 fw-bold">Nome e Cognome</label>
-                    <input type="text" class="form-control mb-3 edit-border fs-5 text-center" id="username">
+            <form type="POST">
+                <div class="row flex justify-content-center">
+                    <div class="col-3">
+                        <label for="" class="pb-3 fs-5 fw-bold">Nome e Cognome</label>
+                        <input type="text" class="form-control mb-3 edit-border fs-5 text-center" id="username">
+                    </div>
+                    <div class="col-3">
+                        <label for="" class="pb-3 fs-5 fw-bold">Km da percorrere</label>
+                        <input type="text" class="form-control mb-3 edit-border fs-5 text-center" id="distance">
+                    </div>
+                    <div class="col-3">
+                        <label for="" class="pb-3 fs-5 fw-bold">Fascia d'età</label>
+                        <select class="form-select mb-3 edit-border fs-5" id="age">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="ov65">Over 65</option>
+                        </select>
+                    </div>
+                    <div class="flex">
+                        <input type="button" class="btn btn-secondary fs-4 p-1 fw-bold mt-5" id="generate">Genera</input>
+                        <button type="reset" class="btn btn-secondary fs-4 p-1 fw-bold mt-5">Annulla</button>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <label for="" class="pb-3 fs-5 fw-bold">Km da percorrere</label>
-                    <input type="text" class="form-control mb-3 edit-border fs-5 text-center" id="distance">
-                </div>
-                <div class="col-3">
-                    <label for="" class="pb-3 fs-5 fw-bold">Fascia d'età</label>
-                    <select class="form-select mb-3 edit-border fs-5" id="age">
-                        <option value="minorenne">Minorenne</option>
-                        <option value="maggiorenne">Maggiorenne</option>
-                        <option value="ov65">Over 65</option>
-                    </select>
-                </div>
-                <div class="flex">
-                    <button class="btn btn-secondary fs-4 p-1 fw-bold mt-5" id="generate">Genera</button>
-                    <button type="reset" class="btn btn-secondary fs-4 p-1 fw-bold mt-5">Annulla</button>
-                </div>
-            </div>
+            </form>
         </div>
         <div class="container py-3 px-4 rounded" id="display-none">
             <h2 class="text-center fw-bold">IL TUO BIGLIETTO</h2>
